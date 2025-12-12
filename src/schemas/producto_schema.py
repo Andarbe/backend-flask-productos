@@ -1,11 +1,7 @@
-from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
-from src.models.producto import Producto
-from marshmallow import fields
+from marshmallow import Schema, fields
 
-class ProductoSchema(SQLAlchemyAutoSchema):
-    class Meta:
-        model = Producto
-        load_instance = True
-        include_fk = True
+class ProductoSchema(Schema):
     id = fields.Int(dump_only=True)
-    precio = fields.Decimal(as_string=True)
+    nombre = fields.Str(required=True)
+    descripcion = fields.Str()
+    precio = fields.Decimal(required=True, as_string=True)
