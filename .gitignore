@@ -1,0 +1,67 @@
+# ============================
+# PYTHON
+# ============================
+venv/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# ============================
+# ENVIRONMENT VARIABLES
+# ============================
+.env
+.env.*
+
+# ============================
+# EDITOR / IDE
+# ============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================
+# LOGS
+# ============================
+*.log
+logs/
+*.out
+
+# ============================
+# BYTECODE / BUILD
+# ============================
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ============================
+# ALEMBIC
+# ============================
+migrations/versions/*.pyc
+migrations/versions/*_tmp.py
+
+# No ignorar migrations/versions/*.py !
+# Solo ignorar archivos temporales.
+
+# ============================
+# DOCKER
+# ============================
+**/.docker/
+docker-data/
+docker_temp/
+.cache/
+
+# ============================
+# SYSTEM FILES
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# TESTING
+# ============================
+.coverage
+pytest_cache/
