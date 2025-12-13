@@ -24,12 +24,19 @@ Fue desarrollado como parte de la asignatura **Arquitectura de Aplicaciones Web 
 ## 📁 Arquitectura por capas
 
 src/
+
 ├─ api/ → Rutas / Controladores (Flask Blueprints)
+
 ├─ services/ → Reglas de negocio
+
 ├─ repositories/ → Acceso a datos (DAO)
+
 ├─ models/ → Entidades del dominio (ORM)
+
 ├─ schemas/ → Validación / Serialización
+
 ├─ core/ → Configuración DB y errores
+
 └─ tests/ → Pruebas unitarias
 
 
