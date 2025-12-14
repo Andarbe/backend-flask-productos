@@ -75,8 +75,10 @@ https://www.docker.com/products/docker-desktop/
 ```bash
 docker-compose up --build
 
+```
 
-3️⃣ Acceder
+
+### 3️⃣ Acceder
 
 API funcionando en:
 👉 http://localhost:5000
